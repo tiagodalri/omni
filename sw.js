@@ -1,5 +1,5 @@
-const CACHE='omni-7ab875a2c1ee';
-const SHELL=["./","./index.html","./manifest.webmanifest","./pwa-omni/icon-192.png","./pwa-omni/icon-512.png","./assets/MonitoramentoPanel.js?v=7ab875a2c1ee","./assets/omni.css?v=7ab875a2c1ee","./assets/omni.js?v=7ab875a2c1ee"];
+const CACHE='omni-82e35a0dc304';
+const SHELL=["./","./index.html","./manifest.webmanifest","./pwa-omni/icon-192.png","./pwa-omni/icon-512.png","./assets/MonitoramentoPanel.js?v=82e35a0dc304","./assets/omni.css?v=82e35a0dc304","./assets/omni.js?v=82e35a0dc304"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).catch(()=>{}));self.skipWaiting()});
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{const r=e.request;const u=new URL(r.url);if(r.method!=='GET'||u.origin!==self.location.origin||r.cache==='no-store'||u.searchParams.has('vivo'))return;
