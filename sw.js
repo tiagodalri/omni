@@ -1,5 +1,5 @@
-const CACHE='omni-f3deb4a6882a';
-const SHELL=["./","./index.html","./manifest.webmanifest","./pwa-omni/icon-192.png","./pwa-omni/icon-512.png","./assets/MonitoramentoPanel.js?v=f3deb4a6882a","./assets/RecursosDeApp.js?v=f3deb4a6882a","./assets/omni.css?v=f3deb4a6882a","./assets/omni.js?v=f3deb4a6882a","./assets/omni2.css?v=f3deb4a6882a"];
+const CACHE='omni-e7c6bea643fc';
+const SHELL=["./","./index.html","./manifest.webmanifest","./pwa-omni/icon-192.png","./pwa-omni/icon-512.png","./assets/AoVivo.js?v=e7c6bea643fc","./assets/MonitoramentoPanel.js?v=e7c6bea643fc","./assets/RecursosDeApp.js?v=e7c6bea643fc","./assets/omni.css?v=e7c6bea643fc","./assets/omni.js?v=e7c6bea643fc","./assets/omni2.css?v=e7c6bea643fc","./assets/omni3.css?v=e7c6bea643fc"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).catch(()=>{}));self.skipWaiting()});
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{const r=e.request;const u=new URL(r.url);if(r.method!=='GET'||u.origin!==self.location.origin||r.cache==='no-store'||u.searchParams.has('vivo'))return;
