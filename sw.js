@@ -1,5 +1,5 @@
-const CACHE='omni-bb4b9000742a';
-const SHELL=["./","./index.html","./manifest.webmanifest","./pwa-omni/icon-192.png","./pwa-omni/icon-512.png","./assets/AoVivo.js?v=bb4b9000742a","./assets/Convidado.js?v=bb4b9000742a","./assets/GraficoPro.js?v=bb4b9000742a","./assets/MonitoramentoPanel.js?v=bb4b9000742a","./assets/RecursosDeApp.js?v=bb4b9000742a","./assets/omni.css?v=bb4b9000742a","./assets/omni.js?v=bb4b9000742a","./assets/omni2.css?v=bb4b9000742a","./assets/omni3.css?v=bb4b9000742a","./assets/omni4.css?v=bb4b9000742a"];
+const CACHE='omni-63e420f6645a';
+const SHELL=["./","./index.html","./manifest.webmanifest","./pwa-omni/icon-192.png","./pwa-omni/icon-512.png","./assets/AoVivo.js?v=63e420f6645a","./assets/Convidado.js?v=63e420f6645a","./assets/GraficoPro.js?v=63e420f6645a","./assets/MonitoramentoPanel.js?v=63e420f6645a","./assets/RecursosDeApp.js?v=63e420f6645a","./assets/omni.css?v=63e420f6645a","./assets/omni.js?v=63e420f6645a","./assets/omni2.css?v=63e420f6645a","./assets/omni3.css?v=63e420f6645a","./assets/omni4.css?v=63e420f6645a"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).catch(()=>{}));self.skipWaiting()});
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{const r=e.request;const u=new URL(r.url);if(r.method!=='GET'||u.origin!==self.location.origin||r.cache==='no-store'||u.searchParams.has('vivo'))return;
