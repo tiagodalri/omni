@@ -1,4 +1,4 @@
-import{M as $e,S as Me,r as nt,j as R}from"./omni.js?v=fd9d51ec3854";/**
+import{M as $e,S as Me,r as nt,j as R}from"./omni.js?v=8c0d16f77348";/**
      * @license
      * KLineChart v10.0.3
      * Copyright (c) 2019 lihu.
