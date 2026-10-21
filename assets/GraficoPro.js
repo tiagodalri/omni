@@ -1,4 +1,4 @@
-import{M as Qt,S as Ft,j as P,r as ne}from"./omni.js?v=5703cd0d7736";/**
+import{M as Qt,S as Ft,j as P,r as ne}from"./omni.js?v=128a106b0d44";/**
      * @license
      * KLineChart v10.0.3
      * Copyright (c) 2019 lihu.
