@@ -1,4 +1,4 @@
-import{M as Ke,S as Nt,j as E,r as se,ca as Mr,cb as Gt,N as Va,cc as za,n as it}from"./omni.js?v=4324141b1786";/**
+import{M as Ke,S as Nt,j as E,r as se,ca as Mr,cb as Gt,N as Va,cc as za,n as it}from"./omni.js?v=f81f4ab9e176";/**
      * @license
      * KLineChart v10.0.3
      * Copyright (c) 2019 lihu.
