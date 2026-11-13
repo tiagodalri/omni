@@ -1,4 +1,4 @@
-import{M as et,S as Xt,j as S,r as J,P as Ar,d$ as Kt,C as Ga,e2 as Ua,e3 as $a,n as lt}from"./omni.js?v=8cc74e9b68df";/**
+import{M as et,S as Xt,j as S,r as J,P as Ar,d$ as Kt,C as Ga,e2 as Ua,e3 as $a,n as lt}from"./omni.js?v=b588dbafd04a";/**
      * @license
      * KLineChart v10.0.3
      * Copyright (c) 2019 lihu.
