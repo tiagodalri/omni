@@ -1,1 +1,1 @@
-const s=a=>`/aulas-especialista/${a}.jpg`,c=a=>null,l=a=>null;export{s as a,c,l as d};
+const c=a=>`/aulas-especialista/${a}.jpg`,l=(a,s)=>null,o=(a,s)=>null,i=a=>null;export{l as a,c as b,o as c,i as d};
